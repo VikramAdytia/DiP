@@ -32,6 +32,7 @@ def check_dir(dir, **kwargs) -> None:
     os.chdir(dir)
     many_extensions(**kwargs)
 
+
 def make_files(ext: str, max_name_len: int = 30, min_name_len: int = 6,
                min_byte_len: int = 256, max_byte_len: int = 4096, quantity: int = 42) -> None:
     for i in range(quantity):
@@ -46,4 +47,4 @@ def many_extensions(**kwargs):
         make_files(ext, quantity=quantity)
 
 
-check_dir(r".\\testdir", gif=9,doc=12,txt=4)
+check_dir(r".\\testdir", gif=9, doc=12, txt=4)
