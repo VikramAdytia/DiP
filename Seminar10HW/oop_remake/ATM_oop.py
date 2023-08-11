@@ -2,13 +2,9 @@ import random
 import sys
 
 
-
-
-
 class ATM():
 
-
-    def __init__(self, name, account_number, balance=0,op_count=0):
+    def __init__(self, name, account_number, balance=0, op_count=0):
         self.name = name
         self.account_number = account_number
         self.balance = balance
@@ -27,7 +23,6 @@ class ATM():
         self.three_operation_bonus()
         print("Current account balance: Nu.", self.balance)
         print()
-
 
     def withdraw(self, amount):
         self.amount = amount

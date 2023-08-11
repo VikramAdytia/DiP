@@ -12,4 +12,4 @@ def pickle2csv(pickle_file_path:str, csv_file_path:str) -> None:
         csv_wirter.writerow()
 
 
-pickle2csv('task2.pickle', "task6.csv")
+pickle2csv('task2.pickle', "rectangle.py.csv")
